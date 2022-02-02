@@ -10,7 +10,7 @@ body{
     background: linear-gradient(to left,rgb(128, 126, 126),white);
 }
 
-.calculatorBody{
+.container{
     display: grid;
     justify-content: center;
     align-content: center;
@@ -39,8 +39,14 @@ body{
   
    
 }
-.reg, .wide:hover{
+.wide:hover{
     background-color:  rgb(155, 152, 152, .4);
+}
+.reg:hover{
+    background-color:  rgb(155, 152, 152, .4);
+}
+.op:hover{
+    background-color:  rgba(255, 123, 0, 0.842);
 }
 
 .wide{
@@ -57,4 +63,20 @@ body{
 .output{
     grid-column: 1 / -1;
     background-color: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+ .output .calculations1{
+     color: rgba(255, 255, 255, 0.644);
+     font-size: 1.5rem;
+ }
+
+ .output .calculations2{
+    color: rgba(255, 255, 255);
+    font-size: 2.5rem;
 }
